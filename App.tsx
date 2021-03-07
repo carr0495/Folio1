@@ -7,7 +7,7 @@ import { MainNav } from "./src/navigation";
 
 export default function App() {
   return (
-    <SafeAreaView style={{ flex: 1 }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: "#39393a" }}>
       <MainNav />
     </SafeAreaView>
   );

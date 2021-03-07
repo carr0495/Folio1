@@ -31,8 +31,19 @@ const App: FC = () => {
           },
         })}
         tabBarOptions={{
-          activeTintColor: "#6D319B",
-          inactiveTintColor: "gray",
+          activeTintColor: "#A064CE",
+          inactiveTintColor: "#c2c2c2",
+          style: {
+            backgroundColor: "#39393A",
+            shadowOffset: {
+              width: 0,
+              height: -30,
+            },
+            shadowColor: "#000",
+            shadowOpacity: 0.3,
+            shadowRadius: 20,
+            borderTopWidth: 0,
+          },
         }}
       >
         <Tab.Screen name="Home" component={Home} />
