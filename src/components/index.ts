@@ -1,3 +1,4 @@
 import SearchBar from "./SearchBar";
+import CIButton from "./CircleIconButton";
 
-export { SearchBar };
+export { SearchBar, CIButton };
