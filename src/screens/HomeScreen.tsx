@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
-import { SearchBar, CIButton } from "../components";
+import { SearchBar, CIButton, ListingBox } from "../components";
 import Ionicons from "@expo/vector-icons/build/Ionicons";
 
 const App: FC = () => {
@@ -38,6 +38,12 @@ const App: FC = () => {
         <CIButton title="Estate" iconName="home" />
         <CIButton title="All" iconName="apps" />
       </View>
+      <ListingBox
+        imgSrc="https://picsum.photos/200/200"
+        faved={true}
+        title="random Image"
+        price={34}
+      />
     </View>
   );
 };
