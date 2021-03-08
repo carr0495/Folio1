@@ -1,22 +1,36 @@
 import React, { FC } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { SearchBar, CIButton } from "../components";
 import Ionicons from "@expo/vector-icons/build/Ionicons";
 
 const App: FC = () => {
   return (
     <View style={styles.container}>
+      {/* TODO clean up into component */}
       <View style={styles.header}>
         <Text style={styles.logo}>Kijiji</Text>
-        <Ionicons
-          name="notifications-circle"
-          size={54}
-          color="#c2c2c2"
-          style={{ alignSelf: "center" }}
-        />
+        <TouchableOpacity
+          style={{
+            shadowOffset: {
+              width: 0,
+              height: 1.5,
+            },
+            shadowColor: "#000",
+            shadowRadius: 1.5,
+            shadowOpacity: 0.5,
+          }}
+        >
+          <Ionicons
+            name="notifications-circle"
+            size={54}
+            color="#a064ce"
+            style={{ alignSelf: "center", marginTop: 15 }}
+          />
+        </TouchableOpacity>
       </View>
 
       <SearchBar />
+      {/* TODO clean up into component */}
       <View style={styles.iconBar}>
         <CIButton title="Buy" iconName="card" />
         <CIButton title="Sell" iconName="wallet-outline" />
